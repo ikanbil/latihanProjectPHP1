@@ -10,8 +10,9 @@
             <thead>
                 <tr class="bg-gray-800 text-white">
                     <th class="py-3 px-4 text-left text-sm uppercase font-semibold">No</th>
-                    <th class="py-3 px-4 text-left text-sm uppercase font-semibold">kelas</th>
-                    <th class="py-3 px-4 text-left text-sm uppercase font-semibold">Siswa</th>
+                    <th class="py-3 px-4 text-left text-sm uppercase font-semibold">Kelas</th>
+                    <th class="py-3 px-4 text-left text-sm uppercase font-semibold">Jurusan</th>
+                    <th class="py-3 px-4 text-left text-sm uppercase font-semibold">Murid</th>
                 </tr>
             </thead>
             <tbody>
@@ -19,6 +20,8 @@
                 <tr>
                     <td class="border-t py-2 px-4 text-sm">{{ $grade->id }}</td>
                     <td class="border-t py-2 px-4 text-sm">{{ $grade->name }}</td>
+
+                    <td class="border-t py-2 px-4 text-sm">{{ $grade->Department->name }}</td>
                     <td class="border-t py-2 px-4 text-sm">
                         @foreach ($grade->students as $student)
                         <ul>

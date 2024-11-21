@@ -13,8 +13,12 @@ class student extends Model
     use HasFactory;
 
     protected $with = ['grade'];
-
-    public function grade(): BelongsTo  {
+    public function Grade(): BelongsTo
+    {
         return $this->belongsTo(grade::class);
+    }
+    public function Department(): BelongsTo
+    {
+        return $this->belongsTo(Department::class);
     }
 }

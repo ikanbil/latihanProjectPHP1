@@ -12,16 +12,14 @@ class StudentController extends Controller
      */
     public function index()
     {
-        // $students = Student::with(['grade'])->get();
-
-        return view('students',[
-            'title' => 'student',
-            // 'students'=> $students
-            'students' => student::all()
-        ]
-
-    );
+        $students = student::with(['Grade','Department'])->get();
+        return view('students', [
+            'title' => 'Student',
+            'students' => $students,
+            //'students' => Student::all(),
+        ]);
     }
+
 
     /**
      * Show the form for creating a new resource.

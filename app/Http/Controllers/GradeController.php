@@ -9,11 +9,11 @@ class GradeController extends Controller
 {
     public function index()
     {
-        $grades = Grade::all();
-
-        return view('Grades', [
+        $grades = Grade::with('students','Department')->get();
+        return view('grades', [
             'title' => 'Grade',
-            'grades' => $grades->load('students')
+            'grades' => $grades
         ]);
     }
+
 }

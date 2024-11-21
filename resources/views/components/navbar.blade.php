@@ -13,7 +13,7 @@
                   <x-nav-link href="/contact" :active="request()->is('contact')">Contact</x-nav-link>
                   <x-nav-link href="/students" :active="request()->is('students')">Students</x-nav-link>
                   <x-nav-link href="/grade" :active="request()->is('grade')">Grade</x-nav-link>
-                  <x-nav-link href="/departement" :active="request()->is('departement')">Departement</x-nav-link>
+                  <x-nav-link href="/department" :active="request()->is('department')">Department</x-nav-link>
 
 
 
