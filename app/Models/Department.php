@@ -10,9 +10,16 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Department extends Model
 {
+    protected $fillable = ['name', 'description'];
+
     use HasFactory;
     public function students(): HasMany
     {
         return $this->hasMany(student::class);
+    }
+
+    public function grade(): HasMany
+    {
+        return $this->belongsTo(grade::class);
     }
 }

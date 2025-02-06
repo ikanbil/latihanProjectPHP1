@@ -41,6 +41,8 @@ class StudentFactory extends Factory
             },
             'alamat' => fake()->city(),
             'email' => fake()->unique()->safeEmail(),
+            'telepon'  => fake()->phoneNumber(),
         ];
     }
 }
+

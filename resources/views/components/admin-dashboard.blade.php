@@ -12,8 +12,8 @@
     <div class="antialiased bg-gray-50 dark:bg-gray-900">
         <x-admin-navbar />
         <x-admin-sidebar />
-        <main class="p-4 md:ml-64 h-auto pt-20">
-                {{ $slot }}
+        <main class="p-16 md:ml-64 h-auto pt-20">
+            {{ $slot }}
         </main>
     </div>
 </body>

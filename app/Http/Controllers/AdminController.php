@@ -8,6 +8,7 @@ class AdminController extends Controller
 {
     public function index()
     {
+        // return auth()->user();
         return view('admin', [ 'title' => 'admin']);
     }
 }

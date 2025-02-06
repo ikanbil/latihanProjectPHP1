@@ -17,15 +17,14 @@ class GradeFactory extends Factory
      */
     public function definition(): array
     {
-
         $gradeName = fake()->unique()->randomElement([
-            'X PPLG 1', 'X PPLG 2', 'XI PPLG 1', 'XI PPLG 2', 'XII PPLG 1', 'XII PPLG 2',
-            'X Animasi 1', 'X Animasi 2', 'X Animasi 3', 'X Animasi 4', 'X Animasi 5',
-            'XI Animasi 1', 'XI Animasi 2', 'XI Animasi 3', 'XI Animasi 4', 'XI Animasi 5',
-            'XII Animasi 1', 'XII Animasi 2', 'XII Animasi 3', 'XII Animasi 4', 'XII Animasi 5',
-            'X Teknik Grafika 1', 'X Teknik Grafika 2', 'XI Teknik Grafika 1', 'XI Teknik Grafika 2',
-            'XII Teknik Grafika 1', 'XII Teknik Grafika 2', 'X DKV 1', 'X DKV 2', 'XI DKV 1',
-            'XI DKV 2', 'XII DKV 1', 'XII DKV 2',
+            '10 PPLG 1', '10 PPLG 2', '11 PPLG 1', '11 PPLG 2', '12 PPLG 1', '12 PPLG 2',
+            '10 Animasi 1', '10 Animasi 2', '10 Animasi 3', '10 Animasi 4', '10 Animasi 5',
+            '11 Animasi 1', '11 Animasi 2', '11 Animasi 3', '11 Animasi 4', '11 Animasi 5',
+            '12 Animasi 1', '12 Animasi 2', '12 Animasi 3', '12 Animasi 4', '12 Animasi 5',
+            '10 Teknik Grafika 1', '10 Teknik Grafika 2', '11 Teknik Grafika 1', '11 Teknik Grafika 2',
+            '12 Teknik Grafika 1', '12 Teknik Grafika 2', '10 DKV 1', '10 DKV 2', '11 DKV 1',
+            '11 DKV 2', '12 DKV 1', '12 DKV 2',
         ]);
 
         $departmentId = null;

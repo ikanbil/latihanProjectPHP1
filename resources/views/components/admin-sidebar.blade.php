@@ -52,13 +52,13 @@
                 </button>
                 <ul id="dropdown-pages" class="hidden py-2 space-y-2">
                     <li>
-                      <x-admin-sidelink href="/student-admin" :active="request()->is('student-admin')">Student</x-admin-sidelink>
+                      <x-admin-sidelink href="/admin/students/student-admin" :active="request()->is('student-admin')">Student</x-admin-sidelink>
                     </li>
                     <li>
-                      <x-admin-sidelink href="/grade-admin" :active="request()->is('grade-admin')">Grade</x-admin-sidelink>
+                      <x-admin-sidelink href="/admin/grades/grade-admin" :active="request()->is('grade-admin')">Grade</x-admin-sidelink>
                     </li>
                     <li>
-                      <x-admin-sidelink href="/department-admin" :active="request()->is('department-admin')">Department</x-admin-sidelink>
+                      <x-admin-sidelink href="/admin/departments/department-admin" :active="request()->is('department-admin')">Department</x-admin-sidelink>
                     </li>
                   </ul>
             </li>

@@ -12,6 +12,8 @@ class student extends Model
 
     use HasFactory;
 
+    protected $fillable = ['name', 'grade_id',"department_id", 'email', 'telepon', 'alamat'];
+
     protected $with = ['grade'];
     public function Grade(): BelongsTo
     {

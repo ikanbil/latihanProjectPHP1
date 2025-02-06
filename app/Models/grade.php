@@ -15,10 +15,10 @@ class grade extends Model
 {
     use HasFactory;
 
-    // protected $with = ['students'];
+    protected $fillable = ['name', 'department_id'];
     public function students(): HasMany
     {
-        return $this->hasMany(student::class);
+        return $this->hasMany(student::class, 'grade_id');
     }
     public function Department(): BelongsTo
     {
