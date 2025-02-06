@@ -23,7 +23,7 @@
 
     Route::get('/login', [AuthController::class, 'index'])->name('login');
     Route::post('/login', [AuthController::class, 'store']);
-    Route::get('/logout', [AuthController::class, 'logout']);
+    Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
     Route::middleware(['auth'])->group(function () {
         Route::get('/admin', [AdminController::class, 'index']);
